@@ -1,0 +1,330 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <style>
+      body{
+        background-color: #fafafa;
+        font-family: Roboto;
+      }
+
+      header {
+        width: 100%;
+        height: 75px;
+        box-shadow: inset 0 -1px 0 0 #dcdfe1;
+        background-color: #ffffff;
+      }
+      .example-header {
+        width: 171px;
+        height: 32px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        color: #333333;
+        display: inline-block;
+        padding-left: 19px;
+      }
+      .ico-Close{
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        float: right;
+        padding: 21px;
+      }
+
+      .Content-Panel {
+        width: 853px;
+        height: 525px;
+        border-radius: 5px;
+        border: solid 1px #dcdfe1;
+        background-color: #ffffff;
+        margin: 21px auto;
+        padding: 10px 31px;
+      }
+
+      .Please-build-an-HTML{
+        width: 791px;
+        height: 77px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        color: #333333;
+      }
+
+      .Name {
+        width: 40px;
+        height: 20px;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #6b7277;
+      }
+
+      .Rectangle {
+        width: 360px;
+        height: 50px;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        border: solid 1px #cdd1d4;
+        background-color: #ffffff;
+        padding-left: 10px;
+        font-style: italic;
+        margin-top: 10px;
+        color: #cdd1d4;
+        /* font-weight: 500; */
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #999999;
+      }
+
+      .column1 {
+        width: 360px;
+        float: left;
+        margin-right: 71px;
+      }
+      .column2 {
+        width: 360px;
+        float: left;
+      }
+
+      .form-group {
+        margin-top: 26px;
+      }
+
+      .Quest {
+        width: 40px;
+        height: 20px;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #6b7277;
+      }
+
+      .Blue-Green-I-dont-k {
+        width: 120px;
+        height: auto;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.67;
+        letter-spacing: normal;
+        color: #000000;
+      }
+
+      input[type="radio"]:checked {
+        width: 10px;
+        height: 10px;
+        background-color: #d22630;
+      }
+
+      /* Radio element, when checked */
+      input[type="radio"]:checked {
+        background-color: #d22630;
+    
+      }
+
+      textarea {
+        border-radius: 5px;
+        width: 360px;
+        height: 136px !important;
+        padding-top: 20px;
+        color: #999999;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #999999;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #999999;
+      }
+
+      footer {
+        width: 100%;
+        height: 834px;
+        background-color: #ffffff;
+      }
+
+      .Submit {
+        width: 52px;
+        height: 21px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      Button .Rectangle {
+        width: 112px;
+        height: 51px;
+        border-radius: 5px;
+        background-color: #d22630;
+      }
+
+      .Button-Label, .Submit {
+        width: 49px;
+        height: 21px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        /* line-height: normal; */
+        letter-spacing: normal;
+        text-align: center;
+        color: #d22630;
+        border: 1px solid;
+        /* padding: 10px; */
+        width: 89px;
+        height: 30px;
+        border-radius: 5px;
+        border: solid 1px #d22630;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 15px;
+        float:left;
+      }
+
+      select {
+      color: #999999;
+      width: 372px;
+      background: url(img/ico-karat.svg) no-repeat right #fff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      /* background-position: right; */
+      /* padding-right: 80px; */
+      font-weight: 400;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: normal;
+      font-style: italic;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #999999;
+      }
+
+      input[type="radio"]:checked:before {
+        content: "";
+        display: block;
+        position: relative;
+        top: 4px;
+        left: 4px;
+        width: 7px;
+        height: 8px;
+        border-radius: 50%;
+        background: #d22630;
+  }
+    
+  </style>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <!--Header-->
+  <header>
+    <h1 class="example-header">Example Screen</h1>
+    <!-- close icon --> 
+    <img src="img/ico-close.svg" class="ico-Close"/>    
+  </header>
+  <!-- Main Content -->
+  <div class="Content-Panel">
+    <p class="Please-build-an-HTML">Please build an HTML page based on this screen design.  The header bar (at top, with the title and close ‘x’) should stretch to fill the available horizontal real estate while the main content area should have a fixed width and be centered.</p>
+  <!-- form -->
+  <form>
+    <div class="column1">
+      <div class="form-group">
+        <label class="Name">Name</label>
+        <input type="text" class="Rectangle" placeholder="Enter your name..."/>
+      </div>
+
+      <div class="form-group">
+          <label class="Quest">Quest</label>
+          <select class="Rectangle" style="color: #999999; width: 372px;     background: url(img/ico-karat.svg) no-repeat right #fff;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; background-position: right 10px center">
+              <option value="choose your quest">Choose your quest...</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="Quest">Favorite Color</label>
+            <div class="Blue-Green-I-dont-k">
+              <input type="radio" name="r" style=" width: 16px; height: 16px; position: relative;
+              top: 2px;" checked="checked"/>
+              Blue
+            </div>
+            <div class="Blue-Green-I-dont-k">
+                <input type="radio" name="r" style=" width: 16px; height: 16px; position: relative;
+                top: 2px;"/>
+                Green
+            </div>
+            <div class="Blue-Green-I-dont-k">
+                <input type="radio" name="r" style=" width: 16px; height: 16px; position: relative;
+                top: 2px;"/>
+                I don't know
+          </div>
+          </div>
+    </div>
+
+    <div class="column2">
+        <div class="form-group">
+          <label class="Name">Additional Notes</label>
+          <textarea style="width: 409px;" placeholder="Optionally enter any additional notes…"  class="Rectangle"></textarea>        
+        </div>
+
+      </div>
+  </form>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div style="width: 245px; margin: 0 auto; padding-top: 20px;">
+      <div class="Button-Label" style="line-height: 1; width: 89px;">Cancel</div>
+      <div class="Submit" style="background: #d22630; margin-left: 10px; color: #fff; line-height: 1; width: 112px;">Submit</div>
+    </div>
+  </footer>
+</body>
+</html>
